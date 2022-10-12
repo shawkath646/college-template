@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/campus_01.jpeg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-color: #fff;
+}
+.welcome-text > * + * {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.section-title {
+  border-bottom: 3px solid;
+}
+.discount-tag {
+  position: absolute;
+  right: -30px;
+  bottom: -70px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  transform: rotate(-20deg);
+}
+
+.head-ad {
+  animation: color-change 3s ease-in-out infinite;
+  margin-bottom: 50px;
+}
+
+.head-ad h1 {
+  border: 3px dotted;
+}
+
+@keyframes color-change {
+  0%{
+    color:#A0D468;
+    transform: scale(1);
+  }
+  20%{
+    color:#4FC1E9;
+  }
+  40%{
+    color:#FFCE54;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60%{
+    color:#FC6E51;
+  }
+  80%{
+    color:#ED5565;
+  }
+  100%{
+    transform: scale(1);
+    color:#AC92EC;
+  }
+}
+
+.card-thumb {
+  width: 200px;
+  height: 180px;
+  object-position: center;
+  object-fit: cover;
+}
+
+footer {
+  --bs-bg-opacity: .5;
+}
+
+.fade-in-ani {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-in;
+  
+}
+
+.fade-in-ani.appear-ani {
+  transform: translateY(0);
+  opacity: 1;
+}
