@@ -4,13 +4,17 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.mt-10 {
+  margin-top: 100px;
+}
+
 .welcome-section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/campus_01.jpeg);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/273201113_339826194815609_4204629032422637220_n.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -91,3 +95,26 @@ footer {
   transform: translateY(0);
   opacity: 1;
 }
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee2456, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee2456, #d8363a, #dd3675, #b44593);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
