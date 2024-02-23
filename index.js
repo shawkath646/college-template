@@ -7,7 +7,6 @@ const appearOptions = {
 
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
   entries.forEach((entry) => {
-    console.log(entry)
     if(entry.isIntersecting) {
       entry.target.classList.add('appear-ani');
       appearOnScroll.unobserve(entry.target);
